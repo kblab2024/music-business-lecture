@@ -1,0 +1,54 @@
+
+:root{--deep:#241A11;--teal:#AF8230;--teald:#856017;--tint:#F6EFDD;--ink:#2B2016;
+--grey:#6E5A40;--amber:#7C3B2D;--amberd:#5E2C22;--sand:#F3E8D0;--snow:#FBF6EA;}
+.reveal-viewport{background:var(--snow)}
+.reveal{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;color:var(--ink);font-size:30px}
+.reveal h1,.reveal h2,.reveal h3{font-family:"Noto Serif TC",serif;color:var(--deep);font-weight:700;letter-spacing:.5px;text-transform:none}
+.reveal .slides section{text-align:left;top:0!important}
+.reveal h2{font-size:1.28em;margin:.1em 0 .5em;border-bottom:3px solid var(--teal);padding-bottom:.18em;display:inline-block}
+.reveal ul{display:block;margin:0 0 .3em;width:100%}
+.reveal li{margin:.34em 0;line-height:1.45}
+.reveal li::marker{color:var(--teal)}
+.reveal .snum{position:absolute;top:-2px;right:0;font-size:15px;font-weight:700;letter-spacing:1px;
+color:#fff;background:var(--teal);padding:3px 12px;border-radius:999px}
+/* 標題型（cover/section/closing）：深棕滿版、置中 */
+.reveal section.title-slide{text-align:center}
+.reveal section.title-slide h1{color:#fff;font-size:2.0em;margin:.2em 0 .4em;line-height:1.25}
+.reveal section.title-slide .lead{color:#f0e7d3;font-size:1.0em;line-height:1.9}
+.reveal section.title-slide .lead .hl{color:#ffd9a0;font-weight:700}
+.reveal section.title-slide .snum{background:var(--teal);color:#241A11}
+/* 媒體 */
+.reveal .slide-img{display:block;margin:.2em auto 0;max-height:360px;width:auto;max-width:100%;
+border-radius:12px;border:1px solid #e3d6b8;box-shadow:0 8px 24px rgba(36,26,17,.18)}
+.reveal section.panel-slide{text-align:center}
+.reveal section.panel-slide .slide-img{max-height:660px;margin:0 auto}
+.reveal figure{margin:0}
+.reveal .imgph{margin:.3em auto 0;max-width:78%;border:2px dashed #d3c29c;border-radius:12px;
+background:repeating-linear-gradient(45deg,#f5edda,#f5edda 14px,#efe4c9 14px,#efe4c9 28px);
+padding:26px;text-align:center;color:#80704f;font-size:.7em}
+.reveal .imgph .t{font-weight:800;color:var(--amberd);margin-bottom:6px;font-size:1.05em}
+.reveal .vrow{display:flex;gap:20px;justify-content:center;align-items:flex-start;margin-top:.3em;flex-wrap:wrap}
+.reveal .vrow iframe{border:0;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.3);background:#000}
+.reveal .vrow.n1 iframe{width:880px;height:495px;max-width:92vw}
+.reveal .vrow.n2 iframe{width:560px;height:315px}
+.reveal .vcap{font-size:14px;color:var(--grey);text-align:center;margin-top:6px;max-width:560px}
+.reveal .vt{font-weight:700;color:var(--teald);font-size:.62em;margin-bottom:.2em;text-align:center}
+.reveal .vpending{background:var(--sand);border:1px dashed #d8c39a;border-radius:12px;padding:18px 20px;font-size:.62em;max-width:560px}
+.reveal .vpending .badge{background:var(--amber);color:#fff;font-weight:700;font-size:.8em;padding:2px 9px;border-radius:6px;margin-right:6px}
+.reveal .vpending a{color:var(--teald)}
+.reveal .score{background:var(--sand);border:1px solid #e6d6b6;border-radius:12px;padding:20px 24px;color:#6b5828;font-size:.8em;margin-top:.3em}
+.reveal .score b{color:var(--amberd)}
+.reveal .score-img{display:block;margin:.25em auto 0;max-height:460px;width:auto;max-width:100%;
+background:#fff;border-radius:12px;border:1px solid #e6d6b6;box-shadow:0 8px 24px rgba(36,26,17,.18);padding:8px}
+.reveal a{color:var(--teald)}
+/* markdown 表格（鋼琴品牌戰、歷代贊助總表） */
+.reveal table.mdtable{border-collapse:collapse;margin:.4em 0 0;font-size:.62em;width:100%}
+.reveal table.mdtable th{background:var(--deep);color:#fff;font-weight:700;padding:8px 14px;text-align:left;border:1px solid #cbb98e}
+.reveal table.mdtable td{padding:8px 14px;border:1px solid #d9cba4;background:#fff}
+.reveal table.mdtable tr:nth-child(even) td{background:var(--tint)}
+/* 固定角落工具列 */
+.deckbar{position:fixed;top:10px;left:12px;z-index:60;display:flex;gap:8px;font-family:"Noto Sans TC",sans-serif}
+.deckbar a{background:rgba(36,26,17,.86);color:#fff;font-size:13px;font-weight:600;padding:6px 12px;border-radius:8px;text-decoration:none;backdrop-filter:blur(4px)}
+.deckbar a:hover{background:var(--teal);color:#241A11}
+.helphint{position:fixed;bottom:8px;left:12px;z-index:60;font-size:12px;color:#a5906a;font-family:"Noto Sans TC",sans-serif}
+@media(max-width:700px){.reveal{font-size:22px}.reveal .vrow.n1 iframe{height:300px}}
