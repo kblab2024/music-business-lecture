@@ -71,7 +71,7 @@
   .org-row .dia{color:var(--gold);font-size:16px;line-height:1}
   .org-name{font-size:31px;letter-spacing:9px;color:var(--gold-hi);font-weight:600;text-indent:9px}
   .meeting{margin-top:12px;font-size:27px;letter-spacing:6px;color:rgba(247,241,222,.85);font-weight:400;text-indent:6px}
-  .title-block{margin-top:26px}
+  .title-block{margin-top:44px}
   .title-l1,.title-l2{
     font-weight:900;letter-spacing:12px;text-indent:12px;line-height:1.22;
     background:linear-gradient(180deg,#fbeeb6 4%, #edd581 30%, #d4af37 62%, #b3892a 100%);
@@ -88,7 +88,7 @@
   .title-l2 .wing.wr::after{left:-6px}
   .tagline{margin-top:18px;font-family:'Cormorant Garamond','Noto Serif TC',serif;font-style:italic;font-weight:500;
      font-size:31px;letter-spacing:2px;color:var(--gold-pale)}
-  .speakers{margin-top:42px;display:flex;align-items:flex-end;gap:96px;position:relative}
+  .speakers{margin-top:70px;display:flex;align-items:flex-end;gap:96px;position:relative}
   .speaker{display:flex;flex-direction:column;align-items:center;position:relative;z-index:2}
   .arch{
     width:308px;height:396px;border-radius:154px 154px 14px 14px;overflow:hidden;position:relative;
@@ -99,12 +99,12 @@
   .arch img{position:absolute;display:block}
   .arch .ph-huang{width:126%;left:-13%;top:-4%}
   .arch .ph-chang{width:225%;left:-158px;top:-224px}
-  .role{margin-top:20px;font-size:23px;letter-spacing:6px;text-indent:6px;color:var(--gold-hi);
+  .role{margin-top:26px;font-size:23px;letter-spacing:6px;text-indent:6px;color:var(--gold-hi);
      border:1px solid rgba(212,175,55,.55);padding:7px 24px;border-radius:999px;background:rgba(212,175,55,.08)}
-  .sname{margin-top:11px;font-size:45px;font-weight:700;letter-spacing:6px;text-indent:6px;color:var(--cream)}
+  .sname{margin-top:14px;font-size:45px;font-weight:700;letter-spacing:6px;text-indent:6px;color:var(--cream)}
   .bridge{position:absolute;left:50%;transform:translateX(-50%);bottom:126px;width:520px;height:160px;z-index:1;opacity:.8}
   .info-card{
-    margin-top:42px;width:940px;padding:26px 48px 24px;position:relative;
+    margin-top:68px;width:940px;padding:32px 48px 30px;position:relative;
     border:1px solid rgba(212,175,55,.55);background:rgba(212,175,55,.05);
   }
   .info-card::before,.info-card::after{
@@ -113,26 +113,12 @@
   .info-card::before{left:-9px;top:-11px}
   .info-card::after{right:-9px;top:-11px}
   .info-row{display:flex;align-items:baseline;justify-content:center;gap:15px;font-size:29px;letter-spacing:1px;
-     padding:9px 0;color:var(--cream)}
+     padding:13px 0;color:var(--cream)}
   .info-row .k{color:var(--gold-hi);font-weight:600;letter-spacing:5px;flex:none}
   .info-row .k::before{content:'◆';font-size:14px;color:var(--gold);margin-right:12px;vertical-align:3px}
   .info-row .sep{color:rgba(212,175,55,.6);flex:none}
   .info-hot{font-weight:700;color:#ffe9a8}
-  .agenda{margin-top:42px;width:944px}
-  .agenda-title{display:flex;align-items:center;gap:18px;justify-content:center;margin-bottom:22px}
-  .agenda-title .rule{width:170px;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim))}
-  .agenda-title .rule.r{background:linear-gradient(90deg,var(--gold-dim),transparent)}
-  .agenda-title .t{font-size:28px;letter-spacing:9px;text-indent:9px;color:var(--gold-hi);font-weight:600}
-  .timeline{position:relative;display:flex;justify-content:space-between}
-  .timeline::before{content:'';position:absolute;left:18px;right:18px;top:56px;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim) 12%,var(--gold-dim) 88%,transparent)}
-  .stop{width:148px;display:flex;flex-direction:column;align-items:center;position:relative}
-  .stop .tm{font-size:22px;color:var(--gold-pale);letter-spacing:1px;height:34px}
-  .stop .dot{width:13px;height:13px;border-radius:50%;border:2px solid var(--gold);background:var(--navy-1);margin:9px 0 12px;position:relative;z-index:1}
-  .stop .lb{font-size:23px;letter-spacing:1px;color:rgba(247,241,222,.92)}
-  .stop.hot .tm{color:#ffe9a8;font-weight:700}
-  .stop.hot .dot{background:var(--gold);box-shadow:0 0 12px rgba(212,175,55,.9);width:16px;height:16px;margin-top:7px}
-  .stop.hot .lb{color:#ffe9a8;font-weight:700;font-size:25px}
-  .ribbon-wrap{margin-top:44px;position:relative}
+  .ribbon-wrap{margin-top:84px;position:relative}
   .ribbon{
     position:relative;background:linear-gradient(180deg,#8e2434,var(--wine) 55%,var(--wine-dark));
     padding:15px 62px;font-size:33px;font-weight:700;letter-spacing:5px;color:#ffe9b0;
@@ -290,20 +276,6 @@
           <div class="info-row"><span class="k">專題演講</span><span class="sep">｜</span><span class="info-hot">上午 10:00 – 12:00</span></div>
           <div class="info-row"><span class="k">地點</span><span class="sep">｜</span><span>台中市政府豐原陽明大樓 4 樓（4-1 會議室）</span></div>
           <div class="info-row"><span class="k">地址</span><span class="sep">｜</span><span>台中市豐原區陽明街 36 號</span></div>
-        </div>
-
-        <div class="agenda">
-          <div class="agenda-title">
-            <div class="rule"></div><div class="t">會 議 流 程</div><div class="rule r"></div>
-          </div>
-          <div class="timeline">
-            <div class="stop"><div class="tm">08:50</div><div class="dot"></div><div class="lb">值日生</div></div>
-            <div class="stop"><div class="tm">09:00</div><div class="dot"></div><div class="lb">簽到</div></div>
-            <div class="stop"><div class="tm">09:30</div><div class="dot"></div><div class="lb">月例會</div></div>
-            <div class="stop hot"><div class="tm">10:00</div><div class="dot"></div><div class="lb">專題演講</div></div>
-            <div class="stop"><div class="tm">12:00</div><div class="dot"></div><div class="lb">拍照・慶生</div></div>
-            <div class="stop"><div class="tm">12:10</div><div class="dot"></div><div class="lb">餐敘・聯誼</div></div>
-          </div>
         </div>
 
         <div class="ribbon-wrap">
