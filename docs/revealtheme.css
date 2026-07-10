@@ -6,7 +6,7 @@
 .reveal h1,.reveal h2,.reveal h3{font-family:"Noto Serif TC",serif;color:var(--deep);font-weight:700;letter-spacing:.5px;text-transform:none}
 .reveal .slides section{text-align:left;top:0!important}
 .reveal h2{font-size:1.28em;margin:.1em 0 .5em;border-bottom:3px solid var(--teal);padding-bottom:.18em;display:inline-block}
-.reveal ul{display:block;margin:0 0 .3em;width:100%}
+.reveal ul{display:block;margin:0 0 .3em;width:100%;box-sizing:border-box;padding-left:1.2em}
 .reveal li{margin:.34em 0;line-height:1.45}
 .reveal li::marker{color:var(--teal)}
 .reveal .snum{position:absolute;top:-2px;right:0;font-size:15px;font-weight:700;letter-spacing:1px;
@@ -36,6 +36,18 @@ padding:26px;text-align:center;color:#80704f;font-size:.7em}
 .reveal .vpending{background:var(--sand);border:1px dashed #d8c39a;border-radius:12px;padding:18px 20px;font-size:.62em;max-width:560px}
 .reveal .vpending .badge{background:var(--amber);color:#fff;font-weight:700;font-size:.8em;padding:2px 9px;border-radius:6px;margin-right:6px}
 .reveal .vpending a{color:var(--teald)}
+/* 影片頁防腰斬：只有帶 has-video 的 section 改直向 flex，影片列吃掉剩餘高度、永不超出 720 畫布 */
+.reveal .slides section.has-video{display:flex!important;flex-direction:column;height:100%}
+.reveal section.has-video h2{align-self:flex-start}
+.reveal section.has-video li{font-size:.8em;line-height:1.38;margin:.26em 0}
+.reveal section.has-video .lead{font-size:.85em;line-height:1.7}
+.reveal section.has-video .vrow{flex:1 1 auto;min-height:0;align-items:stretch}
+.reveal section.has-video .vcell{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:0;max-width:100%}
+.reveal section.has-video .vrow.n1 iframe,
+.reveal section.has-video .vrow.n2 iframe{flex:1 1 0;width:auto;height:auto;min-height:220px;aspect-ratio:16/9;max-width:none}
+.reveal section.has-video .vrow.n1 iframe{max-height:495px}
+.reveal section.has-video .vrow.n2 iframe{max-height:315px}
+.reveal section.title-slide.has-video{align-items:center}
 .reveal .score{background:var(--sand);border:1px solid #e6d6b6;border-radius:12px;padding:20px 24px;color:#6b5828;font-size:.8em;margin-top:.3em}
 .reveal .score b{color:var(--amberd)}
 .reveal .score-img{display:block;margin:.25em auto 0;max-height:460px;width:auto;max-width:100%;
@@ -51,4 +63,4 @@ background:#fff;border-radius:12px;border:1px solid #e6d6b6;box-shadow:0 8px 24p
 .deckbar a{background:rgba(36,26,17,.86);color:#fff;font-size:13px;font-weight:600;padding:6px 12px;border-radius:8px;text-decoration:none;backdrop-filter:blur(4px)}
 .deckbar a:hover{background:var(--teal);color:#241A11}
 .helphint{position:fixed;bottom:8px;left:12px;z-index:60;font-size:12px;color:#a5906a;font-family:"Noto Sans TC",sans-serif}
-@media(max-width:700px){.reveal{font-size:22px}.reveal .vrow.n1 iframe{height:300px}}
+@media(max-width:700px){.reveal{font-size:22px}.reveal .vrow.n1 iframe{max-height:300px}}
