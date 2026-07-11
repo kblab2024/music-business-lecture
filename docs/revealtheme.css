@@ -48,6 +48,13 @@ padding:26px;text-align:center;color:#80704f;font-size:.7em}
 .reveal section.has-video .vrow.n1 iframe{max-height:495px}
 .reveal section.has-video .vrow.n2 iframe{max-height:315px}
 .reveal section.title-slide.has-video{align-items:center}
+/* 圖片頁防腰斬：仿 has-video——直向 flex，圖片吃剩餘高度、等比縮小、永不超出 720 畫布（勿與 has-video 混用；render_media 圖與影片互斥） */
+.reveal .slides section.has-img{display:flex!important;flex-direction:column;height:100%}
+.reveal section.has-img h2{align-self:flex-start;flex:0 0 auto}
+.reveal section.has-img li{font-size:.82em;line-height:1.38;margin:.26em 0}
+.reveal section.has-img ul,.reveal section.has-img table.mdtable{flex:0 0 auto}
+.reveal section.has-img .slide-img{flex:0 1 auto;min-height:0;max-height:360px;width:auto;max-width:100%;align-self:center;object-fit:contain}
+.reveal section.title-slide.has-img{align-items:center}
 .reveal .score{background:var(--sand);border:1px solid #e6d6b6;border-radius:12px;padding:20px 24px;color:#6b5828;font-size:.8em;margin-top:.3em}
 .reveal .score b{color:var(--amberd)}
 .reveal .score-img{display:block;margin:.25em auto 0;max-height:460px;width:auto;max-width:100%;
