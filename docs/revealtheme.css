@@ -21,8 +21,11 @@ color:#fff;background:var(--teal);padding:3px 12px;border-radius:999px}
 .reveal .slide-img{display:block;margin:.2em auto 0;max-height:360px;width:auto;max-width:100%;
 border-radius:12px;border:1px solid #e3d6b8;box-shadow:0 8px 24px rgba(36,26,17,.18)}
 .reveal section.panel-slide{text-align:center}
-.reveal section.panel-slide .slide-img{max-height:660px;margin:0 auto}
+.reveal section.panel-slide .slide-img{max-height:620px;margin:0 auto}
 .reveal figure{margin:0}
+/* 圖說（caption）：小字、置中、次要色，圖片正下方 */
+.reveal .slide-cap{font-size:15px;color:var(--grey);text-align:center;margin:.32em auto 0;max-width:84%;line-height:1.42}
+.reveal section.title-slide .slide-cap{color:#d9cba9}
 .reveal .imgph{margin:.3em auto 0;max-width:78%;border:2px dashed #d3c29c;border-radius:12px;
 background:repeating-linear-gradient(45deg,#f5edda,#f5edda 14px,#efe4c9 14px,#efe4c9 28px);
 padding:26px;text-align:center;color:#80704f;font-size:.7em}
@@ -53,7 +56,8 @@ padding:26px;text-align:center;color:#80704f;font-size:.7em}
 .reveal section.has-img h2{align-self:flex-start;flex:0 0 auto}
 .reveal section.has-img li{font-size:.82em;line-height:1.38;margin:.26em 0}
 .reveal section.has-img ul,.reveal section.has-img table.mdtable{flex:0 0 auto}
-.reveal section.has-img .slide-img{flex:0 1 auto;min-height:0;max-height:360px;width:auto;max-width:100%;align-self:center;object-fit:contain}
+.reveal section.has-img .slide-img{flex:0 1 auto;min-height:0;max-height:340px;width:auto;max-width:100%;align-self:center;object-fit:contain}
+.reveal section.has-img .slide-cap{flex:0 0 auto}
 .reveal section.title-slide.has-img{align-items:center}
 .reveal .score{background:var(--sand);border:1px solid #e6d6b6;border-radius:12px;padding:20px 24px;color:#6b5828;font-size:.8em;margin-top:.3em}
 .reveal .score b{color:var(--amberd)}
