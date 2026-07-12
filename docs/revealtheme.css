@@ -69,9 +69,9 @@ background:#fff;border-radius:12px;border:1px solid #e6d6b6;box-shadow:0 8px 24p
 .reveal table.mdtable th{background:var(--deep);color:#fff;font-weight:700;padding:8px 14px;text-align:left;border:1px solid #cbb98e}
 .reveal table.mdtable td{padding:8px 14px;border:1px solid #d9cba4;background:#fff}
 .reveal table.mdtable tr:nth-child(even) td{background:var(--tint)}
-/* 固定角落工具列 */
-.deckbar{position:fixed;top:10px;left:12px;z-index:60;display:flex;gap:8px;font-family:"Noto Sans TC",sans-serif}
-.deckbar a{background:rgba(36,26,17,.86);color:#fff;font-size:13px;font-weight:600;padding:6px 12px;border-radius:8px;text-decoration:none;backdrop-filter:blur(4px)}
+/* 工具列：置於底部置中，避免遮住投影片標題 */
+.deckbar{position:fixed;bottom:10px;left:50%;transform:translateX(-50%);z-index:60;display:flex;gap:8px;flex-wrap:wrap;justify-content:center;max-width:94vw;font-family:"Noto Sans TC",sans-serif}
+.deckbar a{background:rgba(36,26,17,.82);color:#fff;font-size:13px;font-weight:600;padding:6px 12px;border-radius:8px;text-decoration:none;backdrop-filter:blur(4px)}
 .deckbar a:hover{background:var(--teal);color:#241A11}
-.helphint{position:fixed;bottom:8px;left:12px;z-index:60;font-size:12px;color:#a5906a;font-family:"Noto Sans TC",sans-serif}
+.helphint{position:fixed;top:10px;left:12px;z-index:60;font-size:12px;color:#a5906a;font-family:"Noto Sans TC",sans-serif}
 @media(max-width:700px){.reveal{font-size:22px}.reveal .vrow.n1 iframe{max-height:300px}}
