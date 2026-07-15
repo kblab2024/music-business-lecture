@@ -6,6 +6,7 @@
 .reveal h1,.reveal h2,.reveal h3{font-family:"Noto Serif TC",serif;color:var(--deep);font-weight:700;letter-spacing:.5px;text-transform:none}
 .reveal .slides section{text-align:left;top:0!important}
 .reveal h2{font-size:1.28em;margin:.1em 0 .5em;border-bottom:3px solid var(--teal);padding-bottom:.18em;display:inline-block}
+.reveal h2 .h2sub{display:block;font-size:.58em;color:var(--teald);font-weight:600;margin-top:.18em;letter-spacing:.4px}
 .reveal ul{display:block;margin:0 0 .3em;width:100%;box-sizing:border-box;padding-left:1.2em}
 .reveal li{margin:.34em 0;line-height:1.45}
 .reveal li::marker{color:var(--teal)}
